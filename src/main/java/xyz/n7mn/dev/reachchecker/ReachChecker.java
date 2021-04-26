@@ -7,13 +7,7 @@ import java.util.UUID;
 
 
 public final class ReachChecker extends JavaPlugin {
-    public static HashMap<UUID,String> map = new HashMap<>();
-    public static HashMap<UUID,Integer> VLA = new HashMap<>();
-    public static HashMap<UUID,Integer> VLB = new HashMap<>();
-    public static HashMap<UUID,Double> LastReach = new HashMap<>();
-    public static HashMap<UUID,Double> MaxReach = new HashMap<>();
-    public static HashMap<UUID,Integer> PreviewCPS = new HashMap<>();
-    public static HashMap<UUID,Boolean> ActionBar = new HashMap<>();
+    public static HashMap<UUID,PlayerData> playerdataHashMap = new HashMap<>();
 
     @Override
     public void onEnable() {
